@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта-->
+    <header class="header">
+      <div class="header container">
+        <a href="./index.html" class="header-logo"><span>Web</span> Studio</a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/sprite4.svg#icon-close_40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/sprite4.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="main-nav">
+            <ul class="site-nav">
+              <li class="item">
+                <a href="./index.html" class="link">Студия</a>
+              </li>
+              <li class="item current-item">
+                <a href="./portfolio.html" class="link current">Портфолио</a>
+              </li>
+              <!-- <li class="item"><a href="" class="link">Контакты</a></li> -->
+            </ul>
+          </nav>
+
+          <ul class="header-contacts list">
+            <li class="item">
+              <a href="mailto:project-pm-306@gmail.com" class="link">
+                <svg width="16" height="11" class="contacts-icon">
+                  <use href="./images/sprite4.svg#icon-envelope"></use>
+                </svg>
+                project-pm-306@gmail.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380502058060" class="link">
+                <svg width="10" height="15" class="contacts-icon">
+                  <use href="./images/sprite4.svg#icon-phone"></use>
+                </svg>
+                +050 205 80 60
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Категории-->
+      <section class="section portfolio">
+        <h1 class="section-title portfolio visually-hidden">Портфолио</h1>
+        <div class="container">
+          <ul class="categories-list list">
+            <li class="item">
+              <button type="button" class="button">Все</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!--Примеры работ-->
+
+          <ul class="portfolio-list list">
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project1/img.jpg    1x,
+                      ./images/project1/img@2x.jpg 2x
+                    "
+                    src="./images/project1/img.jpg"
+                    alt="Технокряк"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Технокряк</h2>
+                  <p class="type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project2/img.jpg    1x,
+                      ./images/project2/img@2x.jpg 2x
+                    "
+                    src="./images/project2/img.jpg"
+                    alt="Постер Нью Орлеан вс Голден Стар"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      NEW ORLEANS (AP) Stephen Curry elicited gasps from the New Orleans crowd with a pair of deep 3s that put the Warriors up by 20 and pushed his point total to 17 - in the first quarter.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Постер New Orlean vs Golden Star</h2>
+                  <p class="type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project3/img.jpg    1x,
+                      ./images/project3/img@2x.jpg 2x
+                    "
+                    src="./images/project3/img.jpg"
+                    alt="Ресторан Сифуд"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      Создатели ресторана, команда La Famiglia, собрали под одной крышей все, что ценят истинные гурманы. Здесь самый большой в столице выбор рыбы и морепродуктов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Ресторан Seafood</h2>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project4/img.jpg    1x,
+                      ./images/project4/img@2x.jpg 2x
+                    "
+                    src="./images/project4/img.jpg"
+                    alt="Проект Прайм"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      Powerful noise cancelling headphones: 11 levels of active noise cancelling let you enjoy music, podcasts, videos & calls without distractions.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Проект Prime</h2>
+                  <p class="type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project5/img.jpg    1x,
+                      ./images/project5/img@2x.jpg 2x
+                    "
+                    src="./images/project5/img.jpg"
+                    alt="Проект Боксес"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      The gift baskets are specially designed for Christmas and include the finest assortments such as chocolates, champagnes, baked goods, and so on.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Проект Boxes</h2>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project6/img.jpg    1x,
+                      ./images/project6/img@2x.jpg 2x
+                    "
+                    src="./images/project6/img.jpg"
+                    alt="Десктоп с сайтом"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      A realized creative potential on any stage offers a profound sense of self-worth on our unique individual path, propelling us to live dignified lives. The inner state of personal happiness, collectively, can lead to peaceful coexistence.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Inspiration has no Borders</h2>
+                  <p class="type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project7/img.jpg    1x,
+                      ./images/project7/img@2x.jpg 2x
+                    "
+                    src="./images/project7/img.jpg"
+                    alt="Издание Лимитед Эдишн"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      Our hardcover journals and journal notebooks inspire creativity. We create beautiful journals that are great for writing your daily thoughts.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Издание Limited Edition</h2>
+                  <p class="type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project8/img.jpg    1x,
+                      ./images/project8/img@2x.jpg 2x
+                    "
+                    src="./images/project8/img.jpg"
+                    alt="Проект ЛЭБ"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      The Project Lab started out in 2013 bringing independent change makers and project professionals together to work in collaboration with clients across the world.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Проект LAB</h2>
+                  <p class="type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="card">
+                <div class="card-thumb">
+                  <img
+                    class="portfolio-img"
+                    srcset="
+                      ./images/project9/img.jpg    1x,
+                      ./images/project9/img@2x.jpg 2x
+                    "
+                    src="./images/project9/img.jpg"
+                    alt="Приложение Растущий Бизнес"
+                  />
+                  <div class="description-overlay">
+                    <p class="description">
+                      Prioritizing the growth of your business is one of the best ways to increase the chances that your company will not only last but also contribute to your economic well-being and a stable financial future.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Growing Business</h2>
+                  <p class="type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-all-info">
+            <div class="footer-contacts">
+              <a href="./index.html" class="footer-logo link">
+                <span>Web</span> Studio</a
+              >
+              <address class="footer-address">
+                <p class="city-address">г. Киев, пр-т Леси Украинки, 26</p>
+                <a href="mailto:project-pm-306@gmail.com" class="link"
+                  >project-pm-306@gmail.com</a
+                >
+                <a href="phone:+380502058060" class="link">+050 205 80 60</a>
+              </address>
+            </div>
+            <div class="join-social-networks">
+              <p class="footer-call-to-action">присоединяйтесь</p>
+              <ul class="list footer-social-networks">
+                <li class="soc-item">
+                  <a
+                    href=""
+                    aria-label="Ссылка на Instagram"
+                    class="soc-button"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite4.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-item">
+                  <a href="" aria-label="Ссылка на Twitter" class="soc-button">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite4.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-item">
+                  <a href="" aria-label="Ссылка на Facebook" class="soc-button">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite4.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-item">
+                  <a href="" aria-label="Ссылка на LinkedIn" class="soc-button"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite4.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe">
+            <p class="footer-call-to-action">подпишитесь на рассылку</p>
+
+            <form class="subscribe-form">
+              <div class="form-field">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                />
+                <label for="mail" class="form-label">E-mail</label>
+              </div>
+
+              <button type="submit" class="subscribe-button">
+                Подписаться
+                <svg width="24" height="24" class="subscribe-icon">
+                  <use href="./images/sprite4.svg#icon-plane"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

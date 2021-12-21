@@ -1,0 +1,46 @@
+/* Clients */
+.clients-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients-list .item {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
+}
+
+// .clients-list .item + .item {
+//   margin-left: 30px;
+// }
+
+.client-icon {
+  @include centeredFlex();
+  height: 90px;
+  //   min-width: 170px;
+
+  fill: $clients-icons-color;
+  border: 1px solid $clients-icons-color;
+  border-radius: 4px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
